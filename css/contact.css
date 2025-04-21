@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.jumbotron {
+    background-color: #343a40;
+    color: white;
+    margin-top: 10px; /* Reduced margin */
+    padding: 10px 5px; /* Further reduced padding */
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    width: 30%; /* Adjust width here */
+    max-width: 300px; /* Max width to control large screens */
+}
+
+.jumbotron.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.jumbotron h1, .jumbotron p {
+    margin: 5px 0; /* Reduced margin */
+}
